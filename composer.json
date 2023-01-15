@@ -1,6 +1,13 @@
 {
-    "repositories": [
-        {"type": "composer", "url": "https://repo.packagist.com/blckswan/"},
-        {"packagist.org": false}
-    ]
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "https://repo.packagist.com/blckswan/"
+        },
+        "0": {
+            "type": "composer",
+            "url": "https://repo.packagist.com/blckswan/"
+        },
+        "packagist.org": false
+    }
 }
