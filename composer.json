@@ -1,0 +1,6 @@
+{
+    "repositories": [
+        {"type": "composer", "url": "https://repo.packagist.com/blckswan/"},
+        {"packagist.org": false}
+    ]
+}
