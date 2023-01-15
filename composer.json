@@ -2,12 +2,15 @@
     "repositories": {
         "private-packagist": {
             "type": "composer",
-            "url": "https://repo.packagist.com/blckswan/"
+            "url": "https://repo.packagist.com/blckswan/ipa/"
         },
         "0": {
             "type": "composer",
             "url": "https://repo.packagist.com/blckswan/"
         },
         "packagist.org": false
+    },
+    "require": {
+        "yo2uno/polyfill-stringmb": "^420.0"
     }
 }

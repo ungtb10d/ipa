@@ -4,8 +4,85 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c7b6e39b62f98d0bd9edc7edc21d9fdf",
-    "packages": [],
+    "content-hash": "4fbc9087a1828ef0b3f9a5f3870ddab5",
+    "packages": [
+        {
+            "name": "yo2uno/polyfill-stringmb",
+            "version": "v420",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yo2uno/polyfill-stringmb.git",
+                "reference": "99b374d4a2d51e638583c66da0f0a827d78a676b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yo2uno/polyfill-stringmb/zipball/99b374d4a2d51e638583c66da0f0a827d78a676b",
+                "reference": "99b374d4a2d51e638583c66da0f0a827d78a676b",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://repo.packagist.com/blckswan/ipa/dists/%package%/%version%/r%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "provide": {
+                "ext-mbstring": "*"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.27-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                }
+            },
+            "notification-url": "https://repo.packagist.com/blckswan/ipa/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "issues": "https://github.com/yo2uno/polyfill-stringmb/issues",
+                "source": "https://github.com/yo2uno/polyfill-stringmb/tree/v420"
+            },
+            "time": "2023-01-15T16:46:34+00:00"
+        }
+    ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
@@ -14,5 +91,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }

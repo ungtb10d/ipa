@@ -4,8 +4,26 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit012e2936fa50d123f7189c364d1dbef7
+class ComposerStaticInit1afdfe33221f3d2db8fbf919ffc22ff8
 {
+    public static $files = array (
+        'bf4c0e2fc5acd95063e986448c428784' => __DIR__ . '/..' . '/yo2uno/polyfill-stringmb/bootstrap.php',
+    );
+
+    public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yo2uno/polyfill-stringmb',
+        ),
+    );
+
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
@@ -13,7 +31,9 @@ class ComposerStaticInit012e2936fa50d123f7189c364d1dbef7
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInit012e2936fa50d123f7189c364d1dbef7::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit1afdfe33221f3d2db8fbf919ffc22ff8::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit1afdfe33221f3d2db8fbf919ffc22ff8::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit1afdfe33221f3d2db8fbf919ffc22ff8::$classMap;
 
         }, null, ClassLoader::class);
     }
